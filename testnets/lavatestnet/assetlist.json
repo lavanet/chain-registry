@@ -1,0 +1,28 @@
+{
+    "$schema": "../../assetlist.schema.json",
+    "chain_name": "lavatestnet",
+    "assets": [
+      {
+        "description": "The native token of Lava",
+        "denom_units": [
+          {
+            "denom": "ulava",
+            "exponent": 0,
+            "aliases": []
+          },
+          {
+            "denom": "lava",
+            "exponent": 6,
+            "aliases": []
+          }
+        ],
+        "base": "ulava",
+        "name": "Lava",
+        "display": "lava",
+        "symbol": "LAVA",
+        "keywords": [
+            "infra", "rpc"
+        ]
+      }
+    ]
+  }

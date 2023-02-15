@@ -1,0 +1,61 @@
+{
+  "$schema": "../chain.schema.json",
+  "chain_name": "lavanettestnet",
+  "chain_id": "lava-testnet-1",
+  "pretty_name": "Lava Testnet",
+  "status": "live",
+  "network_type": "testnet",
+  "website": "https://lavanet.xyz/",
+  "bech32_prefix": "lava",
+  "daemon_name": "lavad",
+  "node_home": "$HOME/.lavad",
+  "key_algos": [
+    "secp256k1"
+  ],
+  "slip44": 118,
+  "fees": {
+    "fee_tokens": [
+      {
+        "denom": "ulava"
+      }
+    ]
+  },
+  "staking": {
+    "staking_tokens": [
+      {
+        "denom": "ulava"
+      }
+    ]
+  },
+  "codebase": {
+    "git_repo": "https://github.com/lavanet/lava"
+  },
+  "apis": {
+    "rpc": [
+      {
+        "address": "https://public-rpc.lavanet.xyz/rpc",
+        "provider": "Lava"
+      }
+    ],
+    "rest": [
+      {
+        "address": "https://public-rpc.lavanet.xyz/rest",
+        "provider": "Lava"
+      }
+    ]
+  },
+  "explorers": [
+    {
+      "kind": "lavaexplorer",
+      "url": "https://bd.lavanet.xyz",
+      "tx_page": "https://bd.lavanet.xyz/transactions/${txHash}",
+      "account_page": "https://bd.lavanet.xyz/accounts/${accountAddress}"
+    },
+    {
+      "kind": "guruexplorer",
+      "url": "https://lava.explorers.guru/",
+      "tx_page": "https://lava.explorers.guru/transaction/${txHash}",
+      "account_page": "https://lava.explorers.guru/account/${accountAddress}"
+    }
+  ]
+}
